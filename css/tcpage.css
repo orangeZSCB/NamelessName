@@ -1,0 +1,61 @@
+.tcPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tcPage .tcBox {
+  width: calc(800px - 80px);
+  height: calc(100vh - 120px);
+  padding: 60px 40px;
+  overflow: scroll;
+  align-items: center;
+  border-radius: 12px;
+}
+.tcPage .tcBox ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tcPage .tcBox ul li {
+  list-style: none;
+  margin: 5px;
+  padding: 4px 8px;
+  background-color: var(--article-code-background-color);
+  border-radius: 6px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.tcPage .tcBox ul li a {
+  text-decoration: none;
+  color: var(--article-code-color);
+  transition: 0.3s;
+}
+.tcPage .tcBox ul li:hover {
+  background-color: rgba(142,150,170,0.3);
+}
+.tcPage .tcBox ul li:hover a {
+  color: #5672cd;
+}
+.tcPage .tcBox .postList {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+.tcPage .tcBox .postList span {
+  font-size: 20px;
+  font-family: Noto-Bold;
+  color: #3c3c43;
+  margin: 10px 0 5px 0;
+}
+.tcPage .tcBox .postList a {
+  margin-left: 2em;
+  text-decoration: none;
+  font-family: 18px;
+  color: rgba(60,60,67,0.78);
+  transition: 0.3s;
+}
+.tcPage .tcBox .postList a:hover {
+  color: #5672cd;
+}

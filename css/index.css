@@ -1,0 +1,135 @@
+home {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+home .homeHeader {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding: 80px 64px 64px;
+}
+home .homeHeader .homeHeaderBox {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+home .homeHeader .homeHeaderBox .homeMain {
+  max-width: 592px;
+  line-height: 64px;
+}
+home .homeHeader .homeHeaderBox .homeMain span {
+  background: var(--home-span-background);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: var(--home-span-color);
+  font-size: 56px;
+  font-family: Noto-Bold;
+}
+home .homeHeader .homeHeaderBox .homeMain p {
+  max-width: 576px;
+  font-size: 56px;
+  font-family: Noto-Bold;
+  color: var(--home-p-color);
+}
+home .homeHeader .homeHeaderBox .homeMain .tagline {
+  padding-top: 12px;
+  line-height: 36px;
+  font-size: 24px;
+  color: var(--home-tagline-color);
+}
+home .homeHeader .homeHeaderBox .homeMain .buttonBox {
+  display: flex;
+  margin-top: 32px;
+}
+home .homeHeader .homeHeaderBox .homeMain .buttonBox .button {
+  line-height: 42px;
+  padding: 6px;
+}
+home .homeHeader .homeHeaderBox .homeMain .buttonBox .button a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 1px solid var(--home-button-a-border);
+  font-family: Noto-Bold;
+  transition: 0.5s;
+}
+home .homeHeader .homeHeaderBox .homeMain .buttonBox .brand a {
+  color: var(--home-brand-a-color);
+  background-color: var(--home-brand-a-background-color);
+}
+home .homeHeader .homeHeaderBox .homeMain .buttonBox .brand a:hover {
+  background-color: var(--home-brand-a-hover-background-color);
+}
+home .homeHeader .homeHeaderBox .homeMain .buttonBox .alt a {
+  color: var(--home-alt-a-color);
+  background-color: var(--home-alt-a-background-color);
+}
+home .homeHeader .homeHeaderBox .homeMain .buttonBox .alt a:hover {
+  background-color: var(--home-alt-a-hover-background-color);
+}
+home .homeHeader .homeHeaderBox .homeLogo {
+  width: 560px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+home .homeHeader .homeHeaderBox .homeLogo img {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  top: -200px;
+  left: 100px;
+}
+home .homeHeader .homeHeaderBox .homeLogo div {
+  width: 320px;
+  height: 320px;
+  z-index: -1;
+  position: absolute;
+  top: -200px;
+  left: 100px;
+  border-radius: 320px;
+  background-image: var(--home-logo-div-background-image);
+  filter: blur(68px);
+}
+home .homeContainer {
+  width: 100%;
+  margin-bottom: 64px;
+}
+home .homeContainer ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1152px;
+  padding: 0 64px;
+  margin: 0 auto;
+}
+home .homeContainer ul li {
+  padding: 24px;
+  margin: 8px;
+  list-style: none;
+  background-color: var(--home-Container-li-background-color);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+home .homeContainer ul li img {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 20px;
+  background-color: var(--home-Container-img-background-color);
+  border-radius: 6px;
+}
+home .homeContainer ul li span {
+  color: var(--home-Container-span-color);
+  font-family: Noto-Bold;
+  font-size: 16px;
+}
+home .homeContainer ul li p {
+  margin-top: 8px;
+  color: var(--home-Container-p-color);
+  font-family: Noto-Medium;
+  font-size: 14px;
+}

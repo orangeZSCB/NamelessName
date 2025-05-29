@@ -1,0 +1,316 @@
+post {
+  width: 100vw;
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+}
+.postMenu {
+  display: none;
+}
+.postMain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.postMain postList {
+  width: 272px;
+  height: 100%;
+  overflow: scroll;
+  background-color: var(--post-postlist-background-color);
+}
+.postMain postList .list {
+  margin: 32px;
+}
+.postMain postList .list span {
+  font-weight: bold;
+  font-size: 14px;
+}
+.postMain postList .list span a {
+  color: var(--post-postlist-span-a-color);
+  text-decoration: none;
+}
+.postMain postList .list section {
+  padding: 4px 0px;
+}
+.postMain postList .list section a {
+  font-size: 14px;
+  color: var(--post-postlist-section-a-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.postMain postList .list section a:hover {
+  color: var(--post-postlist-section-a-hover-color);
+}
+.postMain postList::-webkit-scrollbar {
+  display: none;
+}
+.postMain article {
+  width: 831px;
+  height: 100%;
+  overflow: scroll;
+}
+.postMain article .post-cover {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.postMain article .post-cover img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.postMain article .post {
+  width: calc(99% - 128px);
+  padding: 48px 64px;
+  overflow: scroll;
+  color: var(--post-article-post-color);
+}
+.postMain article .post .title {
+  line-height: 36px;
+  font-size: 36px;
+  font-family: Noto-Bold;
+  color: var(--article-title-color);
+}
+.postMain article .post .post-info {
+  margin-bottom: 32px;
+}
+.postMain article .post p {
+  margin: 16px 0px;
+  font-size: 16px;
+  line-height: 28px;
+}
+.postMain article .post a {
+  color: var(--article-a-color);
+}
+.postMain article .post a:hover {
+  color: var(--article-a-hover-color);
+}
+.postMain article .post img {
+  max-width: 100%;
+  max-height: 300px;
+}
+.postMain article .post h1,
+.postMain article .post h2,
+.postMain article .post h3,
+.postMain article .post h4,
+.postMain article .post h5,
+.postMain article .post h6 {
+  color: var(--article-h-color);
+  margin: 16px 0px;
+  font-family: Noto-Bold;
+}
+.postMain article .post h1 {
+  font-size: 32px;
+}
+.postMain article .post h2 {
+  font-size: 24px;
+}
+.postMain article .post h3 {
+  font-size: 20px;
+}
+.postMain article .post h4 {
+  font-size: 14px;
+}
+.postMain article .post h5 {
+  font-size: 14px;
+}
+.postMain article .post h6 {
+  font-size: 14px;
+}
+.postMain article .post h1:hover::after {
+  content: ' # H1';
+  color: var(--article-h-hover-color);
+}
+.postMain article .post h2:hover::after {
+  content: ' # H2';
+  color: var(--article-h-hover-color);
+}
+.postMain article .post h3:hover::after {
+  content: ' # H3';
+  color: var(--article-h-hover-color);
+}
+.postMain article .post h4:hover::after {
+  content: ' # H4';
+  color: var(--article-h-hover-color);
+}
+.postMain article .post h5:hover::after {
+  content: ' # H5';
+  color: var(--article-h-hover-color);
+}
+.postMain article .post h6:hover::after {
+  content: ' # H6';
+  color: var(--article-h-hover-color);
+}
+.postMain article .post ol li ul li {
+  margin-left: 10px;
+}
+.postMain article .post blockquote {
+  margin: 16px 0px;
+  padding: 16px;
+  background-color: var(--article-blockquote-background-color);
+  border-radius: 12px;
+}
+.postMain article .post blockquote p {
+  margin: 0;
+  font-size: 14px;
+  font-family: Noto-Bold;
+}
+.postMain article .post code {
+  padding: 2px 6px;
+  margin: 0px 5px;
+  color: var(--article-code-color);
+  background-color: var(--article-code-background-color);
+  border-radius: 6px;
+}
+.postMain article .post figure {
+  padding: 16px;
+  background-color: var(--article-figure-background-color);
+  border-radius: 12px;
+  overflow: scroll;
+}
+.postMain article .post figure table {
+  border: none;
+}
+.postMain article .post figure pre {
+  margin: 0 5px;
+}
+.postMain article .post figure .line {
+  font-size: 14px;
+}
+.postMain article .post figure .title {
+  display: inline;
+  margin: 0;
+  line-height: 14px;
+  font-size: 14px;
+}
+.postMain article .post pre .comment,
+.postMain article .post pre .title {
+  color: #999;
+}
+.postMain article .post pre .variable,
+.postMain article .post pre .attribute,
+.postMain article .post pre .tag,
+.postMain article .post pre .regexp,
+.postMain article .post pre .ruby .constant,
+.postMain article .post pre .xml .tag .title,
+.postMain article .post pre .xml .pi,
+.postMain article .post pre .xml .doctype,
+.postMain article .post pre .html .doctype,
+.postMain article .post pre .css .id,
+.postMain article .post pre .css .class,
+.postMain article .post pre .css .pseudo {
+  color: #f2777a;
+}
+.postMain article .post pre .number,
+.postMain article .post pre .preprocessor,
+.postMain article .post pre .built_in,
+.postMain article .post pre .literal,
+.postMain article .post pre .params,
+.postMain article .post pre .constant {
+  color: #f99157;
+}
+.postMain article .post pre .class,
+.postMain article .post pre .ruby .class .title,
+.postMain article .post pre .css .rules .attribute {
+  color: #9c9;
+}
+.postMain article .post pre .string,
+.postMain article .post pre .value,
+.postMain article .post pre .inheritance,
+.postMain article .post pre .header,
+.postMain article .post pre .ruby .symbol,
+.postMain article .post pre .xml .cdata {
+  color: #9c9;
+}
+.postMain article .post pre .css .hexcolor {
+  color: #6cc;
+}
+.postMain article .post pre .function,
+.postMain article .post pre .python .decorator,
+.postMain article .post pre .python .title,
+.postMain article .post pre .ruby .function .title,
+.postMain article .post pre .ruby .title .keyword,
+.postMain article .post pre .perl .sub,
+.postMain article .post pre .javascript .title,
+.postMain article .post pre .coffeescript .title {
+  color: #69c;
+}
+.postMain article .post pre .keyword,
+.postMain article .post pre .javascript .function {
+  color: #c9c;
+}
+.postMain article .post table {
+  margin: 0 auto;
+  border: 1px solid var(--article-table-border);
+  border-radius: 8px;
+}
+@media screen and (max-width: 430px) {
+  .postMain article .post .title {
+    font-size: 28px;
+  }
+  .postMain article .post h1 {
+    font-size: 28px;
+  }
+  .postMain article .post img {
+    width: 100%;
+    height: auto;
+  }
+}
+.postMain article .post .tc {
+  display: flex;
+}
+.postMain article .post .tc p {
+  margin: 0;
+}
+.postMain article .post .tc ul {
+  display: flex;
+}
+.postMain article .post .tc ul li {
+  list-style: none;
+  margin: 0 3px;
+}
+.postMain toc {
+  width: 224px;
+  height: 100%;
+  overflow: scroll;
+  border-left: 1px solid var(--post-toc-border-left);
+}
+.postMain toc .post-scrollbar {
+  width: 3px;
+  height: 20px;
+  position: relative;
+  transition: 0.2s;
+  background-color: var(--post-article-scrollbar);
+}
+.postMain toc .toc {
+  padding: 0 6px;
+}
+.postMain toc .toc p {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--post-toc-p-color);
+  margin-left: 10px;
+}
+.postMain toc .toc ol {
+  list-style-type: none;
+}
+.postMain toc .toc ol li {
+  margin-left: 16px;
+  padding: 4px 0px;
+}
+.postMain toc .toc ol li a {
+  font-size: 14px;
+  color: var(--post-toc-a-color);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.postMain toc .toc ol li a .toc-number {
+  display: none;
+}
+.postMain toc .toc ol li a:hover {
+  color: var(--post-toc-a-hover-color);
+}
+.postMain toc::-webkit-scrollbar {
+  display: none;
+}
